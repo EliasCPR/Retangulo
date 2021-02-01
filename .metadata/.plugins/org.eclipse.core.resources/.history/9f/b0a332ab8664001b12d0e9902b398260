@@ -1,0 +1,65 @@
+package br.com.empresa.gui;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class FrameRetangulo {
+	
+	public void criarTela() {
+		
+		JFrame tela = new JFrame();
+		tela.setTitle("Calculos com retângulo");
+		
+		tela.setSize(600, 400);
+		tela.setDefaultCloseOperation(3);
+		tela.setLayout(null);
+		
+		
+//		build one JLabel
+		
+		JLabel labelAltura = new JLabel();
+		labelAltura.setText("Altura: ");
+		labelAltura.setBounds(10, 10, 60, 30);
+		
+//		base JLabel  
+		
+		JLabel labelBase = new JLabel();
+		labelBase.setText("Base:");
+		labelBase.setBounds(10, 50, 60, 30);
+		
+//		build one textField
+		
+		JTextField textAltura = new JTextField();
+		textAltura.setBounds(70, 10, 50, 30);
+		
+//      Base textField  
+		
+		JTextField textBase = new JTextField();
+		textBase.setBounds(70, 50, 50, 30);
+		
+//		construir um botao
+		
+		JButton btnCalcular = new JButton();
+		btnCalcular.setText("calcular");
+		btnCalcular.setBounds(10, 100, 110, 30);
+		
+		JButton btnLimpar = new JButton();
+		btnLimpar.setText("limpar");
+		btnLimpar.setBounds(10,140, 110, 30);
+		
+		tela.getContentPane().add(textAltura);
+		tela.getContentPane().add(labelAltura);
+		tela.getContentPane().add(labelAltura);
+		tela.getContentPane().add(textBase);
+		tela.getContentPane().add(labelBase);
+		tela.getContentPane().add(labelBase);
+		tela.getContentPane().add(btnCalcular);
+		tela.getContentPane().add(btnLimpar);
+		
+		tela.setVisible(true);
+		
+	}
+	
+}
